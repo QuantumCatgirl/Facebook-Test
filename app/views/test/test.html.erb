@@ -1,0 +1,24 @@
+<script type="text/javascript">
+  function redirect() {
+    window.location = "http://www.facebook.com/pages/contiki_test/103591519676764?v=app_103675009667700";
+  };
+</script>
+
+<fb:restricted-to location="DE">
+  If 13+
+  <fb:else>
+    ELSE
+  </fb:else> 
+</fb:restricted-to> 
+
+<object width="550" height="1000">
+  <% unless params[:path].blank? %>
+    <param name="flashvars" value="path=<%= params[:path] %>">
+  <% end %>
+  <param name="movie" value="test.swf">
+  <embed src="test.swf" width="550" height="1000" flashvars="path=<%= params[:path] %>">
+  </embed>
+</object>
+
+<fb:swf swfsrc="http://t2000-1.unboxedconsulting.com:11000/test.swf" width="550px" height="1000px" waitforclick="false" imgsrc="http://www.google.co.uk/images/nav_logo8.png"/>
+
